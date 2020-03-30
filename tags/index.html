@@ -199,7 +199,7 @@
 }( typeof global !== "undefined" ? global : this ) );
 </script>
 
-    <link rel="icon" href= "/Lenhoon.github.io/assets/favicon.ico" />
+    <link rel="icon" href= "/Lenhoon.github.io/assets/favicon.jpg" />
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script" />
     <link rel="preload" href="/Lenhoon.github.io/scripts/main.js" as="script" />
@@ -378,27 +378,6 @@
 
 <!-- City版安装代码已完成 -->
     
-    <div id="disqus_thread"></div>
-    <script>
-        /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        
-        var disqus_config = function () {
-        this.page.url = "https://lenhoon.github.io/tags/index.html";  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = "Tags"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        
-        (function () { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://disqus_AggFtB6G4P.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
-
     
     <!-- gitalk评论 -->
 
@@ -410,6 +389,22 @@
 
     
     
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <div id="comment"></div>
+    <script>
+    new Valine({
+        el: '#comment' ,
+        notify:false, 
+        verify:false, 
+        appId: "EARSYI9Lva36aPVO3I5e5OIX-gzGzoHsz",
+        appKey: "2uiaNKnLlgya5GhT016V1Y2h",
+        placeholder: "期待您的评论",
+        path:window.location.pathname, 
+        avatar:'mm' 
+    });
+    </script>
+
 
     <!-- 评论 -->
 </main>
@@ -501,7 +496,7 @@
     <div class="busuanzi-container">
     
      
-    <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span> :)</span>
+    <span id="busuanzi_container_site_pv">您是第: <span id="busuanzi_value_site_pv"></span> 位访客</span>
     
     </div>
     
